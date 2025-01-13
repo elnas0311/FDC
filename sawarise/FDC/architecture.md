@@ -23,6 +23,5 @@ graph TD
         G
     end
     
-    style B fill:#030320
 
 ```
