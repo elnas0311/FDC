@@ -46,3 +46,11 @@ graph TD
 #### 3. FIWARE Platform
 - **Orion Context Broker**  
   福岡市のデータ共通基盤です。
+
+#### 4. FIWARE Platform
+- **Orion Context Broker**  
+  福岡市のデータ共通基盤です。
+
+#### 5. External
+- **共通基盤利用者**  
+  福岡市データ共通基盤の利用者です。
