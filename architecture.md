@@ -4,7 +4,7 @@ graph TD
     A[ShopStop API Server] -->|データ取得<br>1回/day| B[API Function<br>shopStopAPI_NGSI.py]
     B -->|データ送信| D[FIWARE Orion Context Broker]
     D -->|データ格納| E[NoSQL]
-    D -->|REST API| G[外部システム]
+    D -->|REST API| G[共通基盤利用者]
 
     subgraph Edge Device
         B
@@ -19,7 +19,7 @@ graph TD
         A
     end
 
-    subgraph external system
+    subgraph external
         G
     end
     
