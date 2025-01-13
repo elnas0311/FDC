@@ -3,7 +3,6 @@
 graph TD
     A[ShopStop API Server] -->|データ取得<br>1回/day| B[API Function<br>shopStopAPI_NGSI.py]
     B -->|データ送信| D[FIWARE Orion Context Broker]
-    D -->|データ格納| E[NoSQL]
     D -->|REST API| G[共通基盤利用者]
 
     subgraph Edge Device
@@ -12,7 +11,6 @@ graph TD
 
     subgraph FIWARE Platform
         D
-        E
     end
 
     subgraph External Data Sources
@@ -27,7 +25,7 @@ graph TD
 
 ```
 
-## シーケンス図の説明
+## システムアーキテクチャの説明
 
 このシーケンス図は、**ShopStop API Server** から始まるデータの流れを表しており、外部データソースから取得されたデータが、処理、格納、そしてユーザーに可視化されるまでのプロセスを示しています。
 
